@@ -1,0 +1,1973 @@
+
+```html
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Safalya Deb Portfolio</title>
+
+
+
+  <!-- FONT AWESOME -->
+
+  <link rel="stylesheet"
+
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+
+
+  <style>
+
+
+
+    *{
+
+      margin:0;
+
+      padding:0;
+
+      box-sizing:border-box;
+
+      font-family:Arial, Helvetica, sans-serif;
+
+      scroll-behavior:smooth;
+
+    }
+
+
+
+    body{
+
+      background:#020617;
+
+      color:#fff;
+
+    }
+
+
+
+    section{
+
+      min-height:100vh;
+
+      padding:120px 8%;
+
+    }
+
+
+
+    /* NAVBAR */
+
+
+
+    header{
+
+      position:fixed;
+
+      top:0;
+
+      left:0;
+
+      width:100%;
+
+      padding:25px 8%;
+
+      display:flex;
+
+      justify-content:space-between;
+
+      align-items:center;
+
+      background:#020617;
+
+      z-index:1000;
+
+    }
+
+
+
+    .logo{
+
+      font-size:55px;
+
+      font-weight:900;
+
+      color:#3b5bff;
+
+    }
+
+
+
+    nav a{
+
+      color:white;
+
+      text-decoration:none;
+
+      margin-left:35px;
+
+      font-size:22px;
+
+      font-weight:700;
+
+      transition:.3s;
+
+    }
+
+
+
+    nav a:hover,
+
+    nav a.active{
+
+      color:#3b5bff;
+
+      text-decoration:underline;
+
+    }
+
+
+
+    /* HOME */
+
+
+
+    .home{
+
+      display:flex;
+
+      justify-content:space-between;
+
+      align-items:center;
+
+      gap:50px;
+
+    }
+
+
+
+    .home-text{
+
+      max-width:700px;
+
+    }
+
+
+
+    .home-text h3{
+
+      font-size:65px;
+
+      margin-bottom:10px;
+
+    }
+
+
+
+    .home-text h1{
+
+      font-size:95px;
+
+      color:#3b5bff;
+
+      margin-bottom:10px;
+
+      font-weight:900;
+
+    }
+
+
+
+    .home-text h2{
+
+      font-size:60px;
+
+      margin-bottom:20px;
+
+    }
+
+
+
+    .home-text p{
+
+      font-size:28px;
+
+      color:#d1d5db;
+
+      line-height:1.7;
+
+    }
+
+
+
+    .btn-box{
+
+      margin-top:35px;
+
+      display:flex;
+
+      gap:20px;
+
+      flex-wrap:wrap;
+
+    }
+
+
+
+    .btn{
+
+      padding:18px 40px;
+
+      background:#3b5bff;
+
+      color:white;
+
+      border-radius:12px;
+
+      text-decoration:none;
+
+      font-size:22px;
+
+      font-weight:bold;
+
+      transition:.3s;
+
+      border:none;
+
+      cursor:pointer;
+
+    }
+
+
+
+    .btn:hover{
+
+      transform:translateY(-5px);
+
+      box-shadow:0 0 25px #3b5bff;
+
+    }
+
+
+
+    .btn-outline{
+
+      background:transparent;
+
+      border:2px solid #3b5bff;
+
+    }
+
+
+
+    .socials{
+
+      margin-top:40px;
+
+    }
+
+
+
+    .socials a{
+
+      color:white;
+
+      font-size:35px;
+
+      margin-right:20px;
+
+      transition:.3s;
+
+    }
+
+
+
+    .socials a:hover{
+
+      color:#3b5bff;
+
+    }
+
+
+
+    .home-image{
+
+      position:relative;
+
+    }
+
+
+
+    .home-image img{
+
+      width:500px;
+
+      height:500px;
+
+      border-radius:50%;
+
+      border:5px solid #3b5bff;
+
+      object-fit:cover;
+
+      box-shadow:0 0 40px #3b5bff;
+
+    }
+
+
+
+    .code-icon{
+
+      position:absolute;
+
+      right:-20px;
+
+      top:50%;
+
+      transform:translateY(-50%);
+
+      background:#3b5bff;
+
+      width:90px;
+
+      height:90px;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      border-radius:20px;
+
+      font-size:40px;
+
+      box-shadow:0 0 20px #3b5bff;
+
+    }
+
+
+
+    /* TITLES */
+
+
+
+    .section-title{
+
+      font-size:70px;
+
+      margin-bottom:40px;
+
+      position:relative;
+
+    }
+
+
+
+    .section-title::after{
+
+      content:'';
+
+      position:absolute;
+
+      left:0;
+
+      bottom:-10px;
+
+      width:140px;
+
+      height:5px;
+
+      background:#3b5bff;
+
+    }
+
+
+
+    /* ABOUT */
+
+
+
+    .about{
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:space-between;
+
+      gap:60px;
+
+    }
+
+
+
+    .about-text{
+
+      flex:1;
+
+    }
+
+
+
+    .about-text p{
+
+      font-size:28px;
+
+      line-height:1.8;
+
+      color:#d1d5db;
+
+      margin-bottom:25px;
+
+    }
+
+
+
+    .about-text span{
+
+      color:#3b5bff;
+
+      font-weight:bold;
+
+    }
+
+
+
+    .about-image{
+
+      flex:1;
+
+      position:relative;
+
+    }
+
+
+
+    .about-image img{
+
+      width:100%;
+
+      border-radius:25px;
+
+    }
+
+
+
+    .experience-card{
+
+      position:absolute;
+
+      right:-30px;
+
+      top:50%;
+
+      transform:translateY(-50%);
+
+      background:#0f172a;
+
+      padding:30px;
+
+      border-radius:20px;
+
+      width:220px;
+
+      border:1px solid #1e293b;
+
+    }
+
+
+
+    .experience-card h3{
+
+      font-size:30px;
+
+      margin-bottom:25px;
+
+      line-height:1.5;
+
+    }
+
+
+
+    /* SKILLS */
+
+
+
+    .skills-wrapper{
+
+      display:flex;
+
+      gap:60px;
+
+      align-items:flex-start;
+
+    }
+
+
+
+    .skills-left{
+
+      width:30%;
+
+    }
+
+
+
+    .skills-left p{
+
+      font-size:28px;
+
+      line-height:1.8;
+
+      color:#d1d5db;
+
+    }
+
+
+
+    .skills-right{
+
+      width:70%;
+
+    }
+
+
+
+    .skill-category{
+
+      background:#0f172a;
+
+      border-radius:20px;
+
+      padding:30px;
+
+      margin-bottom:30px;
+
+      border:1px solid #1e293b;
+
+    }
+
+
+
+    .skill-category h2{
+
+      margin-bottom:25px;
+
+      font-size:35px;
+
+    }
+
+
+
+    .skill-grid{
+
+      display:grid;
+
+      grid-template-columns:repeat(3,1fr);
+
+      gap:25px;
+
+    }
+
+
+
+    .skill-item{
+
+      text-align:center;
+
+    }
+
+
+
+    .skill-item i{
+
+      font-size:55px;
+
+      margin-bottom:15px;
+
+      color:#3b5bff;
+
+    }
+
+
+
+    .skill-item h4{
+
+      font-size:22px;
+
+    }
+
+
+
+    /* PROJECTS */
+
+
+
+    .project-grid{
+
+      display:grid;
+
+      grid-template-columns:repeat(3,1fr);
+
+      gap:30px;
+
+      margin-top:50px;
+
+    }
+
+
+
+    .project-card{
+
+      background:#0f172a;
+
+      border-radius:20px;
+
+      overflow:hidden;
+
+      border:1px solid #1e293b;
+
+      transition:.3s;
+
+    }
+
+
+
+    .project-card:hover{
+
+      transform:translateY(-10px);
+
+      box-shadow:0 0 20px #3b5bff;
+
+    }
+
+
+
+    .project-card img{
+
+      width:100%;
+
+      height:250px;
+
+      object-fit:cover;
+
+    }
+
+
+
+    .project-content{
+
+      padding:25px;
+
+    }
+
+
+
+    .project-content h2{
+
+      margin-bottom:15px;
+
+      font-size:34px;
+
+    }
+
+
+
+    .project-content p{
+
+      color:#d1d5db;
+
+      font-size:20px;
+
+      line-height:1.7;
+
+      margin-bottom:20px;
+
+    }
+
+
+
+    .tags{
+
+      display:flex;
+
+      gap:10px;
+
+      flex-wrap:wrap;
+
+    }
+
+
+
+    .tags span{
+
+      background:#1e293b;
+
+      padding:10px 18px;
+
+      border-radius:10px;
+
+      font-size:16px;
+
+    }
+
+
+
+    /* EXPERIENCE */
+
+
+
+    .timeline{
+
+      position:relative;
+
+      margin-top:50px;
+
+      padding-left:80px;
+
+    }
+
+
+
+    .timeline::before{
+
+      content:'';
+
+      position:absolute;
+
+      left:25px;
+
+      top:0;
+
+      width:4px;
+
+      height:100%;
+
+      background:white;
+
+    }
+
+
+
+    .timeline-item{
+
+      position:relative;
+
+      background:#0f172a;
+
+      padding:35px;
+
+      border-radius:20px;
+
+      margin-bottom:40px;
+
+      border:1px solid #1e293b;
+
+    }
+
+
+
+    .timeline-item::before{
+
+      content:'';
+
+      position:absolute;
+
+      left:-67px;
+
+      top:40px;
+
+      width:25px;
+
+      height:25px;
+
+      background:#3b5bff;
+
+      border-radius:50%;
+
+      box-shadow:0 0 20px #3b5bff;
+
+    }
+
+
+
+    .timeline-item h2{
+
+      font-size:38px;
+
+      margin-bottom:10px;
+
+    }
+
+
+
+    .timeline-item h3{
+
+      color:#3b5bff;
+
+      margin-bottom:15px;
+
+      font-size:28px;
+
+    }
+
+
+
+    .timeline-item p{
+
+      color:#d1d5db;
+
+      font-size:20px;
+
+      line-height:1.7;
+
+    }
+
+
+
+    /* CONTACT */
+
+
+
+    .contact-container{
+
+      display:flex;
+
+      gap:50px;
+
+      margin-top:50px;
+
+      flex-wrap:wrap;
+
+    }
+
+
+
+    .contact-left{
+
+      width:35%;
+
+    }
+
+
+
+    .contact-left p{
+
+      font-size:25px;
+
+      line-height:1.8;
+
+      color:#d1d5db;
+
+      margin-bottom:25px;
+
+    }
+
+
+
+    .contact-info{
+
+      margin-top:40px;
+
+    }
+
+
+
+    .contact-info div{
+
+      display:flex;
+
+      align-items:center;
+
+      margin-bottom:30px;
+
+      gap:20px;
+
+    }
+
+
+
+    .contact-info i{
+
+      width:60px;
+
+      height:60px;
+
+      background:#3b5bff;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      border-radius:15px;
+
+      font-size:25px;
+
+    }
+
+
+
+    .contact-info h3{
+
+      font-size:28px;
+
+      margin-bottom:5px;
+
+    }
+
+
+
+    .contact-info span{
+
+      color:#d1d5db;
+
+      font-size:20px;
+
+    }
+
+
+
+    .contact-right{
+
+      width:60%;
+
+      background:#0f172a;
+
+      padding:40px;
+
+      border-radius:20px;
+
+      border:1px solid #1e293b;
+
+    }
+
+
+
+    .input-row{
+
+      display:flex;
+
+      gap:20px;
+
+    }
+
+
+
+    .contact-right input,
+
+    .contact-right textarea{
+
+      width:100%;
+
+      padding:18px;
+
+      margin-bottom:20px;
+
+      background:#020617;
+
+      border:1px solid #334155;
+
+      border-radius:10px;
+
+      outline:none;
+
+      color:white;
+
+      font-size:18px;
+
+    }
+
+
+
+    .contact-right textarea{
+
+      height:200px;
+
+      resize:none;
+
+    }
+
+
+
+    footer{
+
+      padding:30px;
+
+      text-align:center;
+
+      background:#0f172a;
+
+      font-size:18px;
+
+      color:#d1d5db;
+
+    }
+
+
+
+    /* RESPONSIVE */
+
+
+
+    @media(max-width:1200px){
+
+
+
+      .home,
+
+      .about,
+
+      .skills-wrapper,
+
+      .contact-container{
+
+        flex-direction:column;
+
+      }
+
+
+
+      .skills-left,
+
+      .skills-right,
+
+      .contact-left,
+
+      .contact-right{
+
+        width:100%;
+
+      }
+
+
+
+      .project-grid{
+
+        grid-template-columns:1fr;
+
+      }
+
+
+
+      .skill-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+      }
+
+
+
+      .home-text h1{
+
+        font-size:70px;
+
+      }
+
+
+
+      .home-image img{
+
+        width:350px;
+
+        height:350px;
+
+      }
+
+
+
+      nav{
+
+        display:none;
+
+      }
+
+    }
+
+
+
+  </style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+  <!-- NAVBAR -->
+
+
+
+  <header>
+
+
+
+    <div><img src="logo.jpg" height="150" alt="Logo"></div>
+
+
+
+    <nav>
+
+      <a href="#home" class="active">Home</a>
+
+      <a href="#about">About</a>
+
+      <a href="#skills">Skills</a>
+
+      <a href="#projects">Projects</a>
+
+      <a href="#experience">Experience</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+
+
+  </header>
+
+
+
+  <!-- HOME -->
+
+
+
+  <section class="home" id="home">
+
+
+
+    <div class="home-text">
+
+
+
+      <h3>Hi, I'm</h3>
+
+      <h1>Safalya Deb</h1>
+
+      <h2>WebDeveloper</h2>
+
+
+
+      <p>
+
+        I build modern, responsive and user-friendly
+
+        web applications that bring ideas to life.
+
+      </p>
+
+
+
+      <div class="btn-box">
+
+        <a href="#projects" class="btn">View My Work</a>
+
+        <a href="#" class="btn btn-outline">Download CV</a>
+
+      </div>
+
+
+
+      <div class="socials">
+
+        <a href="#"><i class="fab fa-github"></i></a>
+
+        <a href="#"><i class="fab fa-twitter"></i></a>
+
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-facebook"></i></a>
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <div class="home-image">
+
+
+
+      <!-- YOUR IMAGE -->
+
+      <img src="my image 3.jpeg" alt="">
+
+
+
+      <div class="code-icon">
+
+        <i class="fas fa-code"></i>
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- ABOUT -->
+
+
+
+  <section class="about" id="about">
+
+
+
+    <div class="about-text">
+
+
+
+      <h1 class="section-title">About Me</h1>
+
+
+
+      <p>
+
+        I'm <span>Safalya Deb Biswas</span>,
+
+        a passionate Web Developer with a strong focus
+
+        on building clean, efficient and scalable
+
+        web applications.
+
+      </p>
+
+
+
+      <p>
+
+        I love turning complex problems into simple,
+
+        beautiful and intuitive designs. I'm always
+
+        curious to learn new technologies and improve
+
+        my skills.
+
+      </p>
+
+
+
+    </div>
+
+
+
+    <div class="about-image">
+
+
+
+      <!-- YOUR IMAGE -->
+
+      <img src="my image2.jpg" alt="">
+
+
+
+      <div class="experience-card">
+
+        <h3>2+ Years Experience</h3>
+
+        <h3>20+ Projects Completed</h3>
+
+        <h3>15+ Happy Clients</h3>
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- SKILLS -->
+
+
+
+  <section id="skills">
+
+
+
+    <div class="skills-wrapper">
+
+
+
+      <div class="skills-left">
+
+
+
+        <h1 class="section-title">My Skills</h1>
+
+
+
+        <p>
+
+          I work with a variety of technologies to
+
+          build modern and performant web applications.
+
+        </p>
+
+
+
+      </div>
+
+
+
+      <div class="skills-right">
+
+
+
+        <!-- FRONTEND -->
+
+
+
+        <div class="skill-category">
+
+
+
+          <h2>Frontend</h2>
+
+
+
+          <div class="skill-grid">
+
+
+
+            <div class="skill-item">
+
+              <i class="fab fa-html5"></i>
+
+              <h4>HTML</h4>
+
+            </div>
+
+
+
+            <div class="skill-item">
+
+              <i class="fab fa-css3-alt"></i>
+
+              <h4>CSS</h4>
+
+            </div>
+
+
+
+            <div class="skill-item">
+
+              <i class="fab fa-js"></i>
+
+              <h4>JavaScript</h4>
+
+            </div>
+
+
+
+            <div class="skill-item">
+
+              <i class="fab fa-react"></i>
+
+              <h4>React</h4>
+
+            </div>
+
+
+
+            <div class="skill-item">
+
+              <i class="fas fa-wind"></i>
+
+              <h4>Tailwind CSS</h4>
+
+            </div>
+
+
+
+            <div class="skill-item">
+
+              <i class="fab fa-bootstrap"></i>
+
+              <h4>Bootstrap</h4>
+
+            </div>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <!-- BACKEND -->
+
+
+
+        <div class="skill-category">
+
+
+
+          <h2>Backend</h2>
+
+
+
+          <div class="skill-grid">
+
+
+
+            <div class="skill-item">
+
+              <i class="fab fa-node-js"></i>
+
+              <h4>Node.js</h4>
+
+            </div>
+
+
+
+            <div class="skill-item">
+
+              <i class="fas fa-server"></i>
+
+              <h4>Express.js</h4>
+
+            </div>
+
+
+
+            <div class="skill-item">
+
+              <i class="fas fa-database"></i>
+
+              <h4>MongoDB</h4>
+
+            </div>
+
+
+
+            <div class="skill-item">
+
+              <i class="fas fa-database"></i>
+
+              <h4>MySQL</h4>
+
+            </div>
+
+
+
+            <div class="skill-item">
+
+              <i class="fas fa-fire"></i>
+
+              <h4>Firebase</h4>
+
+            </div>
+
+
+
+            <div class="skill-item">
+
+              <i class="fas fa-code"></i>
+
+              <h4>REST API</h4>
+
+            </div>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- PROJECTS -->
+
+
+
+  <section id="projects">
+
+
+
+    <h1 class="section-title">My Projects</h1>
+
+
+
+    <div class="project-grid">
+
+
+
+      <!-- PROJECT 1 -->
+
+
+
+      <div class="project-card">
+
+
+
+        <img src="images/project1.jpg" alt="">
+
+
+
+        <div class="project-content">
+
+
+
+          <h2>Explore - Travel Website</h2>
+
+
+
+          <p>
+
+            A responsive travel website built with
+
+            HTML, CSS and JavaScript.
+
+          </p>
+
+
+
+          <div class="tags">
+
+            <span>HTML</span>
+
+            <span>CSS</span>
+
+            <span>JavaScript</span>
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+      <!-- PROJECT 2 -->
+
+
+
+      <div class="project-card">
+
+
+
+        <img src="images/project2.jpg" alt="">
+
+
+
+        <div class="project-content">
+
+
+
+          <h2>Task Manager App</h2>
+
+
+
+          <p>
+
+            A task management application to organize
+
+            your daily tasks.
+
+          </p>
+
+
+
+          <div class="tags">
+
+            <span>React</span>
+
+            <span>Node.js</span>
+
+            <span>MongoDB</span>
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+      <!-- PROJECT 3 -->
+
+
+
+      <div class="project-card">
+
+
+
+        <img src="images/project3.jpg" alt="">
+
+
+
+        <div class="project-content">
+
+
+
+          <h2>E-Commerce Website</h2>
+
+
+
+          <p>
+
+            A full-stack e-commerce website with cart
+
+            and payment integration.
+
+          </p>
+
+
+
+          <div class="tags">
+
+            <span>React</span>
+
+            <span>Express.js</span>
+
+            <span>MongoDB</span>
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- EXPERIENCE -->
+
+
+
+  <section id="experience">
+
+
+
+    <h1 class="section-title">Experience</h1>
+
+
+
+    <div class="timeline">
+
+
+
+      <div class="timeline-item">
+
+
+
+        <h2>Frontend Developer</h2>
+
+
+
+        <h3>Tech Solutions Inc.</h3>
+
+
+
+        <p>
+
+          Building responsive and interactive user
+
+          interfaces using React, Tailwind CSS and
+
+          JavaScript.
+
+        </p>
+
+
+
+      </div>
+
+
+
+      <div class="timeline-item">
+
+
+
+        <h2>Web Developer</h2>
+
+
+
+        <h3>CodeCraft Technologies</h3>
+
+
+
+        <p>
+
+          Developed and maintained web applications
+
+          using MERN stack and REST APIs.
+
+        </p>
+
+
+
+      </div>
+
+
+
+      <div class="timeline-item">
+
+
+
+        <h2>Jr. Web Developer</h2>
+
+
+
+        <h3>Web Vision</h3>
+
+
+
+        <p>
+
+          Worked on frontend development and bug fixes
+
+          for client projects.
+
+        </p>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- CONTACT -->
+
+
+
+  <section id="contact">
+
+
+
+    <div class="contact-container">
+
+
+
+      <div class="contact-left">
+
+
+
+        <h1 class="section-title">Get In Touch</h1>
+
+
+
+        <p>
+
+          Have a project in mind or want to work
+
+          together? Feel free to reach out to me!
+
+        </p>
+
+
+
+        <div class="contact-info">
+
+
+
+          <div>
+
+            <i class="fas fa-envelope"></i>
+
+
+
+            <div>
+
+              <h3>Email</h3>
+
+              <span>safalyadeb9@gmail.com</span>
+
+            </div>
+
+          </div>
+
+
+
+          <div>
+
+            <i class="fas fa-phone"></i>
+
+
+
+            <div>
+
+              <h3>Phone</h3>
+
+              <span>+91 6291330780</span>
+
+            </div>
+
+          </div>
+
+
+
+          <div>
+
+            <i class="fas fa-location-dot"></i>
+
+
+
+            <div>
+
+              <h3>Location</h3>
+
+              <span>West Bengal, Nadia, Kalyani</span>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <div class="socials">
+
+          <a href="#"><i class="fab fa-github"></i></a>
+
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+
+          <a href="#"><i class="fab fa-twitter"></i></a>
+
+          <a href="#"><i class="fab fa-instagram"></i></a>
+
+        </div>
+
+
+
+      </div>
+
+
+
+      <div class="contact-right">
+
+
+
+        <form>
+
+
+
+          <div class="input-row">
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+          </div>
+
+
+
+          <input type="text" placeholder="Subject">
+
+
+
+          <textarea placeholder="Enter your message"></textarea>
+
+
+
+          <button class="btn">Send Message</button>
+
+
+
+        </form>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <footer>
+
+    © 2026 Safalya Deb | All Rights Reserved
+
+  </footer>
+
+
+
+</body>
+
+</html>
+
+```
+
